@@ -22,7 +22,7 @@ def calcExponents():
     EXP_NUM = getInteger("Enter a integer as the exponent: ")
     print("\n") # two spaces
     PRODUCT = BASE_NUM ** EXP_NUM
-    print (f"{BASE_NUM} raised to the power of {EXP_NUM} is {PRODUCT} !!")
+    print (f"{BASE_NUM} raised to the power of {EXP_NUM} is {PRODUCT} !!\n\n")
     return
 
 
@@ -44,4 +44,4 @@ printHeader("Addition and Subtractions")
 addAndSubtract()
 
 # Keeps the window open
-#input("Press enter to continue.... ")
+input("Press enter to continue.... ")
