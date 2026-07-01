@@ -81,7 +81,7 @@ def pluralize_y(noun):
 def ticket_eater(original_value, tickets_list):
     receipt = f"Change Summary: ${original_value:.2f} \n-----------\n" 
     for coin_type, count in tickets_list.items():
-        if count > 0: #do not print coin types that have a count of 0
+        if count == 0: #do not print coin types that have a count of 0
             continue
         if count != 1: # figure out whether to pluralize or not 
             coin_type = pluralize(coin_type)
