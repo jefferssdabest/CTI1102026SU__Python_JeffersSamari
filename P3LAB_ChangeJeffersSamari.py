@@ -22,7 +22,7 @@ def multiply_by_100(money):
 # subtract that which can be subtracted from the change amount.
 # add a new entry to the result dictionary containing
 # the currency type and number of occurences
-# ex output: 94.43
+# ex. If input is 94.43, the output will be the following:
 # {'Dollar': 93, 'Quarter': 1, 'Dime': 1, 'Nickel': 1, 'Penny': 3}
 def change_calculator(change, currency_type): 
     result = {} # initialize our result string
@@ -66,11 +66,15 @@ def pluralize_y(noun):
         return noun + "s"
     return noun[:-1] + "ies"
 
+
 # Recursively convert the items in a dictionary into a return summary 
 # in the form of a string so that it may be printed cleanly.
-# output example: money = 1.43
+#
+# ex. if input for original_value is "1.43", and tickets_list is..
+# "{'Dollar': 1, 'Quarter': 1, 'Dime': 1, 'Nickel': 1, 'Penny': 3}",
+# your result will be the following:
 
-#"Change Summary: 1.43 
+#Change Summary: $1.43 
 #-----------
 # 1 Dollar
 # 1 Quarter
@@ -90,6 +94,10 @@ def ticket_eater(original_value, tickets_list):
         receipt += f"{count} {coin_type}\n"
     return receipt
 
+###################### DEF MAIN HERE ###############################
+# prompt input from the user and calculate how many dollars, 
+# quarters, dimes, nickels, and pennies add up to reach
+# the submitted number.
 def main():
     total = float(input("Enter the amount of money as a float: "))
     times_cien = multiply_by_100(total)
