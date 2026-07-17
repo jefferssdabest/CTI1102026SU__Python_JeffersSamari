@@ -41,8 +41,8 @@ def generate_random_amount():
 
 # check deposit is a valid float and above zero
 # if either condition is false, repeat the second prompt until otherwise
-# the user can alternatively close the program by pressing 'enter', 'q',
-#  or 'exit' at this second prompt.
+# the user can alternatively close the program by pressing 'q' or
+#  'exit' at this second prompt.
 def get_float():
     num = input("How much cash will you put in the self-checkout? ")
     while True:
