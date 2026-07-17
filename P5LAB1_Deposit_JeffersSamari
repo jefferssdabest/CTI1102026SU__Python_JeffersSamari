@@ -9,6 +9,9 @@ import random
 #  money, or press 'q' to exit the program
 # This builds upon P3LAB1
 ###############################################################################
+# determines the users standing balance
+def generate_random_amount():
+    return float(round(random.uniform(0.01, 100.00), 2))
 # HOW I USED AI FOR THIS:
 # I handwrote the first draft of the dispense_change() function, then gave it
 #  to ChatGPT and asked it to optimize the code. It came back with several 
@@ -34,8 +37,7 @@ import random
 #
 # I then programmed the changes. Everything not mentioned was coded by me.
 
-def generate_random_amount():
-    return float(round(random.uniform(0.01, 100.00), 2))
+
 
 # check deposit is a valid float and above zero
 # if either condition is false, repeat the second prompt until otherwise
