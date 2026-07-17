@@ -65,10 +65,9 @@ def get_float():
 # print(dispense_change(4.73))
 #
 # # outputs: 
-# 1 Dollar
-# 1 Quarter
-# 1 Dime
-# 1 Nickel
+# 4 Dollar
+# 2 Quarter
+# 2 Dime
 # 3 Pennies
 def dispense_change(change): 
     currency_type = [
